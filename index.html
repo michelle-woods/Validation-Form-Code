@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="./src/styles.css" />
+	<link rel="stylesheet" href="./src/validation.css">
+
+</head>
+
+<!-- 
+	────────▓▓▓▓▓▓▓────────────▒▒▒▒▒▒
+──────▓▓▒▒▒▒▒▒▒▓▓────────▒▒░░░░░░▒▒
+────▓▓▒▒▒▒▒▒▒▒▒▒▒▓▓────▒▒░░░░░░░░░▒▒▒
+───▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▒▒░░░░░░░░░░░░░░▒
+──▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░░░░▒
+──▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░░░░░▒
+─▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░░░░░░▒
+▓▓▒▒▒▒▒▒░░░░░░░░░░░▒▒░░▒▒▒▒▒▒▒▒▒▒▒░░░░░░▒
+▓▓▒▒▒▒▒▒▀▀▀▀▀███▄▄▒▒▒░░░▄▄▄██▀▀▀▀▀░░░░░░▒
+▓▓▒▒▒▒▒▒▒▄▀████▀███▄▒░▄████▀████▄░░░░░░░▒
+▓▓▒▒▒▒▒▒█──▀█████▀─▌▒░▐──▀█████▀─█░░░░░░▒
+▓▓▒▒▒▒▒▒▒▀▄▄▄▄▄▄▄▄▀▒▒░░▀▄▄▄▄▄▄▄▄▀░░░░░░░▒
+─▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░░░░░▒
+──▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░░░░▒
+───▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀▀▀░░░░░░░░░░░░░░▒
+────▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░▒▒
+─────▓▓▒▒▒▒▒▒▒▒▒▒▄▄▄▄▄▄▄▄▄░░░░░░░░▒▒
+──────▓▓▒▒▒▒▒▒▒▄▀▀▀▀▀▀▀▀▀▀▀▄░░░░░▒▒
+───────▓▓▒▒▒▒▒▀▒▒▒▒▒▒░░░░░░░▀░░░▒▒
+────────▓▓▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░▒▒
+──────────▓▓▒▒▒▒▒▒▒▒▒░░░░░░░░▒▒
+───────────▓▓▒▒▒▒▒▒▒▒░░░░░░░▒▒
+─────────────▓▓▒▒▒▒▒▒░░░░░▒▒
+───────────────▓▓▒▒▒▒░░░░▒▒
+────────────────▓▓▒▒▒░░░▒▒
+──────────────────▓▓▒░▒▒
+───────────────────▓▒░▒
+────────────────────▓▒
+
+	CLIENT-SIDE VALIDATION.....
+	Two types of client side validation:
+	1----- Built-in form validation
+				(HTML5)
+			 = required
+			 = min-length
+			 = max-length
+			 = type
+			 = size
+			 (CSS3)
+			 = invalid
+			 = out-of-range
+			 
+			 
+
+	2----- Javascript validation
+
+
+	HTML5 INPUT TYPES
+
+	<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+ -->
+<body>
+	<div className="Signup">
+		<div className="container">
+			<div className="signup-wrapper">
+				<div className="signup-txt">
+					<h1>
+						Learn to code by <br /> watching others
+					</h1>
+					<p>See how experienced developers solve problems in real-time.</p>
+					<p>
+						Watching scripted tutorials is great, but understanding how
+						developers think is invaluable.
+					</p>
+				</div>
+				<div className="signup-form">
+					<div className="form-header">
+						<p className="header-txt">
+							Try it free 7 days <span>then $20/mo. thereafter</span>
+						</p>
+					</div>
+					<div className="form-wrapper">
+						<form id="form"
+							className="form-group">
+
+							<label for="fname">
+								<input
+									type="text"
+									name="firstname"
+									placeholder="First Name"
+									
+									required
+								/>
+								<p className="errors-txt">
+								Error message
+								</p>
+							</label>
+
+							<label for="lname">
+								<input
+									type="text"
+									name="lastname"
+									placeholder="Last Name"
+									required
+								/>
+								<p className="errors-txt">
+							<small>Error message</small>	
+								</p>
+							</label>
+
+							<label for="email">
+								<input
+									type="email"
+									name="email"
+									placeholder="Email Address"
+									required
+								/>
+								<p className="errors-txt">
+									Error message
+								</p>
+
+							<label for="tel">
+							<input 
+								type="tel" 
+								name="tel" 
+								placeholder="Phone Number"
+								maxlength="15"
+								minlength="8"
+								pattern="[0-9]{11,14}"
+								required 
+								/>
+								<p className="errors-txt">
+									Error message
+								</p>
+							</label>
+
+							<label>
+								<input type="number"
+								name="name"
+								placeholder="age"
+								minlength="0"
+								maxlength="5"
+								max="99"
+								required
+								/>
+								<p className="errors-txt">
+									Error message
+								</p>
+							</label>
+
+							<label for="password">
+								<input
+									type="password"
+									name="password"
+									placeholder="Password"
+									maxlength="100"
+									minlength="30"
+								  required
+								/>
+								<p className="errors-txt">
+									Error message
+								</p>
+							</label>
+							<button type="submit" name="submit">
+							Submit
+							</button>
+						</form>
+						<p className="terms-txt">
+							By clicking the button, you are agreeing to our
+							<span>Terms and Services</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<script src="src/index.js">
+	</script>
+</body>
+
+</html>
